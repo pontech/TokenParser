@@ -29,6 +29,20 @@ public:
       return true;
     }
 
+    int replace(char a, char b )
+    {
+      us8 i = 0;
+      int count = 0;
+      while(buffer[i] != 0) {
+        if(buffer[i] == a) {
+	  buffer[i] = b;
+	  count++;
+        }
+        i++;
+      }
+      return count;
+    }
+
 // todo: enforce consecutive charactors
     boolean contains(const char* string)
     {
