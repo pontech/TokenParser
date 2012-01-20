@@ -19,7 +19,7 @@ public:
       us8 temp = tail;
       while(string[i] != 0) {
         if(string[i] != wild) {
-            if((buffer[temp]>0x61 ? buffer[temp]-0x20 : buffer[temp]) != string[i]) {
+            if((buffer[temp]>0x60 ? buffer[temp]-0x20 : buffer[temp]) != string[i]) {
               return false;
             }
         }
